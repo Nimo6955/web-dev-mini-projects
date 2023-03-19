@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: architects daughter;
+    font-size: 24px;
+    margin-inline: 50px;
+
+}
+.main-container{
+    width: 95%;
+    margin: auto;
+
+}
+.container-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container-2{
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+.container-3{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: center;
+}
+textarea{
+    box-shadow: 2px 5px 10px;
+    outline: none;
+    border: none;
+    padding: 40px 25px 25px;
+    height: 275px;
+    width: 275px;
+}
+#check-icon{
+    position: absolute;
+    right: 17%;
+    top: 6%;
+    color: green;
+}
+#x-icon{
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    color: red;   
+}

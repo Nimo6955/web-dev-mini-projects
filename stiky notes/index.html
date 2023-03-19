@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stiky notes</title>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Architects+Daughter">
+    <script src="https://kit.fontawesome.com/3577982b1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="font-family: architects daughter;">
+    <div class="container-1">
+        <button type="button" class="btn btn-success" onclick="typeNotes()">Create Notes</button>
+    </div>
+    <div class="container-2"></div>
+    <div class="main-container">
+        <div class="container-3">
+            <form>
+                <textarea id="note-text" placeholder="Write note...."></textarea>
+                <span id="check-icon"><i class="fa-regular fa-circle-check"></i></span>
+                <span id="x-icon"><i class="fa-regular fa-circle-xmark"></i></span>
+            </form>
+        </div>
+    </div>     
+    <script src="script.js"></script>
+</body>
+</html>
