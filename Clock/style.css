@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+body{
+   background : linear-gradient(to right, rgb(0, 253, 253), rgb(197, 231, 4));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   overflow: hidden;
+}
+.clock{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;    
+    background-size: cover;
+    background-position-y: -350px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 3px solid black;
+    position: relative;
+    
+    
+}
+.clock .number{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+
+}
+.number1{ transform: rotate(0deg); }
+.number2{ transform: rotate(30deg); }
+.number3{ transform: rotate(60deg); }
+.number4{ transform: rotate(90deg); }
+.number5{ transform: rotate(120deg); }
+.number6{ transform: rotate(150deg); }
+.number7{ transform: rotate(180deg); }
+.number8{ transform: rotate(210deg); }
+.number9{ transform: rotate(240deg); }
+.number10{ transform: rotate(270deg); }
+.number11{ transform: rotate(300deg); }
+.number12{ transform: rotate(330deg); }
+
+.clock .hand{
+    --rotation: 360;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;   
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    transform: rotate(calc(var(--rotation) *1deg));
+    /* transform: translateX(-50%); */
+}
+.clock::after{
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.clock .hand.second{
+    left: 49.4%;
+    width: 5px;
+    height: 240px;
+    background-color: red;
+    
+}
+.clock .hand.minute{
+    
+    left: 48.87%;
+    width: 10px;
+    height: 220px;
+    background-color: black;
+
+}
+.clock .hand.hour{
+    left: 47.9%;
+    width: 20px;
+    height: 200px;
+    background-color: black;
+}
+.clock img{
+    position: absolute;
+    bottom: -4px;
+    width: 494px;
+
+}
+@media only screen and (max-width: 720px){
+    .clock{
+        height: 300px;
+        width: 300px;
+    }
+   .clock .hand.second{
+    width: 2px;
+    height: 140px;
+   }   
+   .clock .hand.minute{
+    width: 5px;
+    height: 120px;
+   } 
+   .clock .hand.hour{
+    width: 10px;
+    height: 100px;
+   }
+   .clock .number{
+    font-size: 20px;
+   } 
+   .clock img{
+    position: absolute;
+    width: 400px;
+    bottom: -30px;
+    left: -20px;
+   }
+}

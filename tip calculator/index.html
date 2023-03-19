@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3577982b1c.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="body">
+    <div class="big">
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <hr>
+        <label>Bill Amount</label>
+        <div><button><i class="fa-solid fa-indian-rupee-sign"></i></button><input id="amount" type="number"></div>
+        <br>
+        <br>
+        <label>Number of Guests</label>
+        <div><button><i class="fa-solid fa-person"></i></button><input id="guests" type="number"></div>
+        <br>
+        <br>
+        <label>Service Quality</label>
+        <div><select id="quality">
+            <option disabled selected value="0"></option>
+            <option value="0.2">20% - Great</option>
+            <option value="0.1">10% - Good</option>
+            <option value="0.05">5% - Fine</option>
+        </select></div>
+    </div>
+    <hr>
+    <div class="c-1">
+    <button onclick="calculate()">Calculate</button></div>
+</div>
+<div id="tip-amount"></div>
+    <script src="script.js"></script>
+</body>
+</html>

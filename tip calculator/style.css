@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background : linear-gradient(to right, #3a171e, #7a171e, #7a171e, #7a171e, #3a171e);
+}
+hr{
+    width: 95%;
+}
+.big{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    background-color: whitesmoke;
+}
+
+input{
+    padding: 7px 30px; 
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.container button{
+    padding: 7px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 2px;
+}
+.c-1{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #E2b144;
+    outline: none;
+    border: none;
+    box-shadow: 0px 1px 2px;
+}
+#quality{
+    padding: 7px 80px; 
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: start;
+    box-shadow: 0px 0px 2px;
+}
+select{
+    margin-top: 10px;
+}
+#tip-amount{
+    visibility: hidden;
+    margin-top: 10px;
+    min-width: 250px;
+    background-color: #E2b144;
+    bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    position: fixed;
+
+}
+#tip-amount.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 10.5s;
+    animation: fadein 0.5s, fadeout 0.5s 10.5s;
+}
+@-webkit-keyframes fadein{
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+}
+@keyframes fadein{
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+}
+@-webkit-keyframes fadeout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}
+@keyframes fadeout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}
+
+
