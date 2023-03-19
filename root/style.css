@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Luckiest Guy;
+}
+body{
+    background-color: rgb(194, 180, 180);
+    color: white;
+}
+nav{
+    background-color: #e74c3c;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+a{
+    text-decoration: none;
+}
+
+nav ul li {
+    /* background-color: white; */
+    color: white;
+    gap: 10px;
+    border-radius: 5px;
+    list-style: none;
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
+}
+nav ul li:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+nav #h1{
+    display: none;
+}
+.main2 .qus #playAgain{
+    display: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin: auto;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 5px 10px;
+    background-color: #4cd137;
+}
+.main2{
+    display: grid;
+    grid-template-columns: 82% 18%;
+
+}
+.main2 .qus h1 {
+    display: inline;
+    margin: 20px;
+}
+.main2 .qus {
+    margin: 20px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 80px;
+    padding: 120px;
+    border-radius: 10px;
+}
+.main2 .ans h1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 90px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.main2 .ans {
+    height: 100%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+#ans-1{
+    background-color: #0652DD;
+}
+
+.main2 .qus #rightAns {
+    animation: 0.5s jj ;
+    display: none;
+    color: green;
+}
+
+@keyframes jj {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        display: none;
+    }
+}
+
+.main2 .ans #ans-1:hover {
+    color: #0652DD;
+    transition: 0.8s;
+    background-color: white;
+}
+
+#ans-2{
+    background-color: #d35400;;
+}
+.main2 .ans #ans-2:hover {
+    transition: 0.8s;
+    color: #d35400;;
+    background-color: white;
+}
+
+#ans-3{
+    background-color: #FFC312;;
+}
+.main2 .ans #ans-3:hover {
+    transition: 0.8s;
+    color: #FFC312;;
+    background-color: white;
+}
+
+#wrongans{
+    animation: kk 0.5s infinite;
+    font-size: 90px;
+    display: none;
+    color: red;
+}
+
+@keyframes kk {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main2 .qus {
+        font-size: 50px;
+        padding-top: 150px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .main2 .qus {
+        font-size: 25px;
+        padding-top: 200px;
+    }
+    .main2 .qus #wrongans {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .main2 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .ans h1 {
+        font-size: 70px;
+    }
+    .main2 .ans {
+        display: flex;
+        flex-direction: row;
+        margin-inline: 20px;
+
+    }
+    .main2 .ans h1 {
+        margin-inline: 20px;
+        padding: 30px 70px; 
+    }
+    .main2 .qus #wrongans {
+        font-size: 60px;
+    }
+}
+@media only screen and (max-width: 730px) {
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    nav #h1{
+        display: block; 
+    }
+    nav ul {
+        display: none;
+    }
+    .main2 .ans h1 {
+        margin-inline: 20px;
+        padding: 20px 50px; 
+        font-size: 50px;
+    }
+    
+    .main2 .qus {
+        font-size: 20px;
+        padding: 0;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    .main2 .qus #hide h1 {
+        display: inline;
+    }
+    .main2 .qus #wrongans {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .main2 .ans h1 {
+        margin-inline: 20px;
+        padding: 10px 20px; 
+    }
+   
+}
+
+@media only screen and (max-width: 280px) {
+    .main2 .ans h1 {
+        font-size: 25px;
+    }
+    .main2 #hide h1{
+        font-size: 30px;
+        margin: 5px;
+    }
+}
